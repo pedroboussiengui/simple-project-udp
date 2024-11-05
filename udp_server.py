@@ -1,37 +1,3 @@
-# import json
-# import socket
-# import time
-
-# UDP_IP = "127.0.0.1"
-# UDP_PORT = 5005
-
-# sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-# sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-# sock.bind((UDP_IP, UDP_PORT))
-
-# players_entered = {}
-# addr_list = []
-
-# while True:
-#     data, addr = sock.recvfrom(1024)
-
-#     obj = json.loads(data.decode('utf-8'))
-
-#     player_id = obj['id']
-
-#     # Verifica se o jogador já entrou no jogo
-#     if player_id not in players_entered:
-#         addr_list.append(addr)
-
-#         # Marca o jogador como já tendo entrado no jogo
-#         players_entered[player_id] = True
-        
-#         # Imprime a mensagem de entrada do jogador
-#         print(f'Player ID #{player_id} enters the game')
-
-#     for addr in addr_list:
-#         sock.sendto(data, addr)
-
 import socket
 import pickle
 
