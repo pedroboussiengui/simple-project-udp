@@ -11,7 +11,7 @@ python udp_server.py
 
 ```shell
 python client.py 1
-python client.py 1
+python client.py 2
 ```
 
 3. Have fun!!
